@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="file:///C:/Users/Tanisha(Mi%20bebe)/OneDrive/Desktop/ProyectoWeb1/images/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetics Girly</title>
+
+    <!-- lo otro link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <link rel="stylesheet" href="stylee.css">
+
+</head>
+<body>
+
+
+
+<header class="header">
+
+    <a href="#home" class="logo"> <img src="images/logo.png" alt=""> </a>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="buscar..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+    </div>
+
+</header>
+
+
+<nav class="navbar">
+    <div id="close-navbar" class="fas fa-times"></div>
+    <a href="#home">inicio</a>
+    <a href="#shop">tienda</a>
+    <a href="#gallery">galería</a>
+    <a href="#team">equipo</a>
+    <a href="#arrivals">novedades</a>
+    <a href="#blogs">blogs</a>    
+</nav>
+
+
+
+<section class="home" id="home">
+
+    <div class="slide active">
+        <div class="content">
+            <img src="images/content-img-1.png" alt="">
+            <span>nuevas novedades 2025</span>
+            <h3>cosmetics</h3>
+            <a href="#" class="btn">leer más</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/home-img-1.png" alt="">
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <img src="images/content-img-2.png" alt="">
+            <span>nuevas novedades 2025</span>
+            <h3>accesorios</h3>
+            <a href="#" class="btn">leer más</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/home-img-2.png" alt="">
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <img src="images/content-img-3.png" alt="">
+            <span>nueva colección</span>
+            <h3>skin care</h3>
+            <a href="#" class="btn">leer más</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/home-img-3.png" alt="">
+        </div>
+    </div>
+
+</section>
+
+
+
+<section class="category">
+
+    <a href="#" class="box">
+        <img src="images/category-1.png" alt="">
+        <p>cosmeticos</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/category-2.png" alt="">
+        <p>maquillaje</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/category-3.png" alt="">
+        <p>polvo</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/category-4.png" alt="">
+        <p>loción</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/category-5.png" alt="">
+        <p>lipstick</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/category-6.png" alt="">
+        <p>mascara</p>
+    </a>
+
+</section>
+
+
+<section class="about" id="about">
+
+    <div class="content">
+        <span>¿Por qué elegirnos?</span>
+        <h3>El maquillaje marca la diferencia</h3>
+        <p>Realza tu belleza con nuestros productos de alta calidad, diseñados para ofrecerte el mejor acabado y cuidado para tu piel.</p>         <a href="#" class="btn">leer más</a>
+    </div>
+    
+</section>
+
+
+
+<section class="shop" id="shop">
+
+    <div class="heading">
+        <h1>Productos destacados</h1>
+        <p>Descubre nuestra selección especial con lo mejor de nuestra colección.</p>
+    </div>
+
+    <div class="swiper products-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-1.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>productos de belleza</p>
+                    <div class="price">RD$1235.00 <span>RD$3100.00</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-2.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>productos de belleza</p>
+                    <div class="price">RD$2000.00 <span>RD$5000.00</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-3.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>productos de belleza</p>
+                    <div class="price">RD$2300.00 <span>RD$4300.00</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-4.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>productos de belleza</p>
+                    <div class="price">RD$999.00 <span>RD$3000.00</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-5.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>productos de belleza</p>
+                    <div class="price">RD$4600.00 <span>RD$8900.00</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-6.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>productos de belleza</p>
+                    <div class="price">RD$2900.00 <span>RD$5400.00</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-7.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>productos de belleza</p>
+                    <div class="price">RD$1800.00 <span>RD$3599.00</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-8.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>productos de belleza</p>
+                    <div class="price">RD$2000.00 <span>RD$4780.00</span></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+
+
+<section class="gallery" id="gallery">
+
+    <div class="heading">
+        <h1>Nuestra galería</h1>
+        <p>Explora una selección de nuestros mejores momentos y proyectos destacados.</p>
+        </div>
+
+    <div class="lightbox">
+        <a href="images/img-1.jpg"><img src="images/img-1.jpg" alt=""></a>
+        <a href="images/img-2.jpg"><img src="images/img-2.jpg" alt=""></a>
+        <a href="images/img-3.jpg"><img src="images/img-3.jpg" alt=""></a>
+        <a href="images/img-4.jpg"><img src="images/img-4.jpg" alt=""></a>
+        <a href="images/img-5.jpg"><img src="images/img-5.jpg" alt=""></a>
+        <a href="images/img-6.jpg"><img src="images/img-6.jpg" alt=""></a>
+    </div>
+
+</section>
+
+
+<section class="team" id="team">
+
+    <div class="heading">
+        <h1>Nuestro equipo</h1>
+        <p>Conoce a las profesionales que hacen posible cada proyecto con pasión y compromiso.</p>
+        </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/team-1.png" alt="">
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Snalla López</h3>
+                <p>make-up artist</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/team-2.png" alt="">
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>veronica jhons</h3>
+                <p>make-up artist</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/team-3.png" alt="">
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Lisbeth Montero</h3>
+                <p>make-up artist</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="arrivals" id="arrivals">
+
+    <div class="heading">
+      
+        <h1>Nuevas llegadas</h1>
+        <p>Descubre nuestra última colección con las tendencias más recientes para esta temporada.</p>
+        </div>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>productos de belleza</p>
+                    <div class="price">RD$2000.00 <span>RD$5000.00</span></div>
+                    <a href="#" class="btn">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>productos de belleza</p>
+                    <div class="price">RD$2000.00 <span>RD$4500.00</span></div>
+                    <a href="#" class="btn">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>productos de belleza</p>
+                    <div class="price">RD$2500.00 <span>RD$5000.00</span></div>
+                    <a href="#" class="btn">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>productos de belleza</p>
+                    <div class="price">RD$1999.00 <span>RD$4100.00</span></div>
+                    <a href="#" class="btn">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>productos de belleza</p>
+                    <div class="price">RD$3200.00 <span>RD$6700.00</span></div>
+                    <a href="#" class="btn">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>productos de belleza</p>
+                    <div class="price">RD$999.00 <span>RD$3200.00/span></div>
+                    <a href="#" class="btn">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-7.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>productos de belleza</p>
+                    <div class="price">RD$1299.00 <span>RD$3450.00</span></div>
+                    <a href="#" class="btn">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-8.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>productos de belleza</p>
+                    <div class="price">RD$1500.00 <span>RD$4100.00</span></div>
+                    <a href="#" class="btn">agregar al carrito</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+    
+</section>
+
+
+<section class="reviews">
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-1.png" alt="">
+                    <div class="info">
+                        <h3>Fremmy Lantigua</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">El producto llegó en perfectas condiciones y en el tiempo indicado. Muy satisfecho con la compra.</p>
+        </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-2.png" alt="">
+                    <div class="info">
+                        <h3>Patricia Santana</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Excelente calidad y servicio al cliente. Sin duda volveré a comprar aquí.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-3.png" alt="">
+                    <div class="info">
+                        <h3>vicky campusano</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Muy satisfecha con la atención recibida. Productos de alta calidad.</p>
+        </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-4.png" alt="">
+                    <div class="info">
+                        <h3>Erilainy Vargas</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Me encantan todos sus productos, definitivamente son los mejores, 10/10</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-5.png" alt="">
+                    <div class="info">
+                        <h3>Tania Rodriguez</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Los mejores productos, cada vez son con los precios mas baratos y no son de mala calidad. amo aqui</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-6.png" alt="">
+                    <div class="info">
+                        <h3>Estefany Perdomo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Las vendedoras son las mejores realmente, espero que su negocio siga creciendo más y más.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="service">
+
+    <div class="box">
+        <img src="images/service-1.png" alt="">
+        <h3>envío gratis</h3>
+        <p>Ofrecemos envío gratuito en todos los pedidos nacionales sin importe mínimo.</p> </div>
+
+    <div class="box">
+        <img src="images/service-2.png" alt="">
+        <h3>pago seguro</h3>
+        <p>Garantizamos pagos 100% seguros con cifrado SSL para proteger tu información.</p>
+    </div>
+
+    <div class="box">
+        <img src="images/service-3.png" alt="">
+        <h3>atención 24/7</h3>
+        <p>Estamos disponibles las 24 horas, los 7 días de la semana para resolver tus dudas.</p>
+    </div>
+
+</section>
+
+
+
+<section class="blogs" id="blogs">
+
+    <div class="heading">
+        <h1>nuestros blogs diarios</h1>
+        <p>Descubre las últimas tendencias, consejos y novedades sobre nuestros productos.</p>
+    </div>
+
+    <div class="swiper blogs-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-1.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 6 de marzo, 2025 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Consejos para cuidar tu piel</h3>
+                    <p>Descubre cómo mantener tu piel hidratada y luminosa durante todo el año.</p>
+                    <a href="#" class="btn">leer más</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-2.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 06 de marzo, 2025</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Los beneficios del té verde</h3>
+                    <p>Conoce cómo el té verde puede ayudarte a mejorar tu bienestar diario.</p>
+                     <a href="#" class="btn">leer más</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-3.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 06 de marzo, 2025</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Tendencias en moda para esta temporada</h3>
+                    <p>Descubre las prendas que marcarán tendencia en los próximos meses.</p>
+                    <a href="#" class="btn">leer más</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-4.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 01 de enero, 2021 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Consejos para cuidar tu piel</h3>
+                    <p>Descubre cómo mantener tu piel hidratada y luminosa durante todo el año.</p>
+                    <a href="#" class="btn">leer más</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-5.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 8 de febrero, 2021 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Los beneficios del té verde</h3>
+                    <p>Conoce cómo el té verde puede ayudarte a mejorar tu bienestar diario.</p>
+                    <a href="#" class="btn">leer más</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-6.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 24 de diciembre, 2024 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Tendencias en moda para esta temporada</h3>
+                    <p>Descubre las prendas que marcarán tendencia en los próximos meses.</p>
+                    <a href="#" class="btn">leer más</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+       
+
+        <div class="box">
+            <h3>links extras</h3>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> mis ordenes </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> mis favoritos </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> mi wishlist </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> politicas  </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> términos de uso </a>
+        </div>
+
+        <div class="box">
+            <h3>contacto</h3>
+            <p> <i class="fas fa-phone"></i> 829-456-7890 </p>
+            <p> <i class="fas fa-phone"></i> 829-222-3333 </p>
+            <p> <i class="fas fa-envelope"></i> girly1@gmail.com </p>
+            <p> <i class="fas fa-map"></i> santo domingo oeste </p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-instagram"></a>
+               
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>boletín informativo</h3>
+<p>suscríbete para recibir las últimas novedades</p>
+            <form action="">
+                <input type="email" name="" placeholder="Ingresa tú correo" id="" class="email">
+                <input type="submit" value="Enviar" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+    <div class="credit"> creado por <span>DevFlex </span> | todos los derechos reservados </div>
+
+</section>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+<script src="java.js"></script>
+
+<script>
+    lightGallery(document.querySelector('.gallery .lightbox'));
+</script>
+    
+</body>
+</html>
